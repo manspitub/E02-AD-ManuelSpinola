@@ -1,0 +1,14 @@
+
+CREATE TABLE pais (
+  id BIGINT AUTO_INCREMENT NOT NULL,
+  nombre VARCHAR(128) NOT NULL,
+  CONSTRAINT pk_pais PRIMARY KEY (id)
+);
+CREATE TABLE producto (
+  id BIGINT AUTO_INCREMENT NOT NULL,
+  nombre VARCHAR(255) NOT NULL,
+  precio REAL NOT NULL,
+  imagen TEXT,
+  descripcion TEXT,
+  CONSTRAINT pk_producto PRIMARY KEY (id)
+);
